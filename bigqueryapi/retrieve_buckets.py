@@ -26,7 +26,7 @@ credentials_path = "C:\\Users\\EPOTENDIG\\AppData\\Roaming\\gcloud\\application_
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
 
 
-def retrieve_buckets(project_id):
+def retrieve_buckets(project_id="training-gcp-309207"):
 
     storage_client = storage.Client(project=project_id)
     buckets = storage_client.list_buckets()
@@ -37,4 +37,4 @@ def retrieve_buckets(project_id):
 
 
 # Run the function with your project ID
-retrieve_buckets(project_id="training-gcp-309207")
+retrieve_buckets("training-gcp-309207")

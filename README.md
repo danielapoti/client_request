@@ -6,6 +6,8 @@ This README describes two Python scripts for interacting with Google Cloud Stora
 
 This script downloads a file from a GCS bucket.
 
+![img_1.png](img_1.png)
+
 * **Requirements:**
     * `google-cloud-storage` library ([https://cloud.google.com/apis/docs/cloud-client-libraries](https://cloud.google.com/apis/docs/cloud-client-libraries))
 
@@ -21,6 +23,8 @@ This script downloads a file from a GCS bucket.
 **2. retrieve_buckets.py**
 
 This script lists all the buckets in your GCP project using implicit authentication with Application Default Credentials (ADC).
+
+![img.png](img.png)
 
 * **Requirements:**
     * `google-cloud-storage` library ([https://cloud.google.com/apis/docs/cloud-client-libraries](https://cloud.google.com/apis/docs/cloud-client-libraries))
@@ -40,6 +44,8 @@ This script lists all the buckets in your GCP project using implicit authenticat
 ## BigQuery Script for Client usage
 
 This script utilizes the Google Cloud BigQuery API to analyze customer purchase history data.
+
+![img_2.png](img_2.png)
 
 * **Functionality:**
     * Calculates the total number of purchases and total amount spent for a specific customer ID.

@@ -18,9 +18,11 @@ def query_result(query):
 
 
 query = """
-        SELECT count(*),sum(TotalAmount) as total, CustomerID
+        SELECT count(*) AS cnt,sum(TotalAmount) as total, CustomerID
         FROM `training-gcp-309207.customer.PurchaseHistory`
-        WHERE CustomerID = 298
         GROUP BY CustomerID
+        HAVING cnt > 7
+        ORDER BY total desc
+        LIMIT 15
     """
 query_result(query)

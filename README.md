@@ -18,7 +18,7 @@ This script downloads a file from a GCS bucket.
         * `destination_file_name`: The path and filename where you want to save the downloaded file on your local machine.
     3. Run the script. It will download the file and print a confirmation message.
 
-**2. authenticate_implicit_with_adc.py**
+**2. retrieve_buckets.py**
 
 This script lists all the buckets in your GCP project using implicit authentication with Application Default Credentials (ADC).
 

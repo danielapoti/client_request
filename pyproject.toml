@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "clientapi"
+version = "0.1.0"
+description = ""
+authors = ["Daniela Potenza <daniela.potenza@ymail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-cloud-storage = "^2.16.0"
+logging = "^0.4.9.6"
+google-cloud-bigquery = "^3.21.0"
+pytest = "^8.1.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
